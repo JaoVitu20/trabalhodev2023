@@ -85,3 +85,4 @@ function obterSituacaoIMC(imc) {
         return "Obesidade grau III";
     }
 }
+
