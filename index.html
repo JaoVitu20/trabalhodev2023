@@ -16,14 +16,13 @@
 <body>
     <div class="container">
         <div class="imagem">
-            <img src="assets/imagens/IMC.png">
+            <img src="assets/imagens/novo-01.png">
         </div>
         <div class="formulario">
             <div class="titulo">
                 <h1>CALCULADORA DE IMC</h1>
             </div>
-
-            <div class="calculadora">
+                 <div class="calculadora">
 
                     <label for="idade">Idade:</label>
                     <input class="input-form" type="number" id="idade" placeholder="Insira sua idade" required>
@@ -34,7 +33,9 @@
                     <label for="altura">Altura (M):</label>
                     <input class="input-form" type="number" id="altura" placeholder="Insira sua altura" required>
 
-                    <button class="button-calc" onclick="calcular()">Calcular</button>
+
+                    <button class="button-calc" 
+                    onclick="calcular()">Calcular</button>
 
                     <div id="resultado"></div>
                 
@@ -42,8 +43,12 @@
         </div>
     </div>
     
+    <div class="result">
+<div id="resultado"></div>
+     </div>
+
     <script src="assets/js/script.js"></script>
-        <div id="resultado"></div></h1>
+        
         
 
     
