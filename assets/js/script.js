@@ -42,7 +42,7 @@ function calcularPrecoB(idade, peso, altura) {
     const fatorComorbidade = obterFatorComorbidade(imc);
     const precoBasico = 100 + (fatorComorbidade * 10 * (imc / 10));
     const precoStandard = (150 + (fatorComorbidade * 15)) * (imc / 10);
-    const precoPremium = (200 - (imc * 10) + (fatorComorbidade * 20)) * (imc / 10);
+    const precoPremium = (100 + (imc * 10) + (fatorComorbidade * 20)) * (imc / 10);
 
     return `<strong>Plano Básico:</strong> R$ ${precoBasico.toFixed(2)}<br>
             <strong>Plano Standard:</strong> R$ ${precoStandard.toFixed(2)}<br>
